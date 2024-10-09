@@ -4,7 +4,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. This is how I set up the project locally. 
+
+## Main files
+
+The primary files that were edited for this website are:
+- app.component.css
+- app.component.html
+- app.component.ts
+
+Additionally, I added images to the assets folder, which are utilized throughout the project.
 
 ## Code scaffolding
 
