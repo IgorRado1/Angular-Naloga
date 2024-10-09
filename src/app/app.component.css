@@ -1,0 +1,376 @@
+        /*BODY*/
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 65px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .bold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .thin {
+            font-family:'Corbel Light', sans-serif;
+            font-weight: 100;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Corbel Light', sans-serif;
+            font-weight: 100;
+            text-align: left;
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: #00aced; 
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+        }
+
+
+        h3 {
+            font-family: 'Corbel Light', sans-serif;;        
+            font-weight: bold;
+            font-size: 30px;
+            text-align: left;
+            margin-bottom: -5px;
+            margin-top: 1px;
+        }
+
+        p {
+            font-size: 40px;
+            font-family: 'Corbel Light', sans-serif;
+            font-weight: 100;
+            text-align: left;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+        
+        hr {
+            width: 2px;
+            height: 3px;
+            background-color: #00aced;
+            border: none;
+            margin-left: 1px;
+            margin-bottom: 60px;
+            padding-left: 120px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+
+        td img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        td a {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        
+        td a .arrow {
+            color: white;
+            font-weight: normal;
+        }
+        
+        td a:hover {
+           font-weight: bold;
+        }
+        
+        td a:hover .arrow {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        th, td {
+            vertical-align: top;
+            padding: 10px;
+            /*border: 1px solid #00aced;*/ /*--------PRIKAZ TABEL*/
+        }
+
+        .whitespace {
+            width: 40px;
+        }
+
+
+
+        /* Slog za tabelo */
+        .tablesCSS {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+
+
+        /*HERO MENU BAR*/
+        .formatLogo {
+            display: flex;
+            align-items: center;
+        }
+
+        .topnav {
+            display: flex;
+            align-items: center;
+            background-color: #101010b5;
+            justify-content: space-between;
+            padding: 10px 160px;
+        }
+        
+        .topnav a {
+            color: #f2f2f2;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .logoText{
+            margin-top: 5px;
+            font-size: 25px;
+        }
+
+        .thin{
+            font-weight: 100;
+        }
+        
+        .formatMenu {
+            font-family: 'Corbel Light';        
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 1.6;
+            padding: 0 15px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+
+        .formatMenu::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #00aaff;
+            left: 0;
+            bottom: -1px;
+            transition: width 0.3s ease;
+        }
+        
+        .formatMenu:hover::after {
+            width: 100%;
+        }
+        
+        .formatMenu:hover {
+            color: #00aaff;
+        }
+
+        /*MUSIC THEME HERO*/
+        .MusicThemeBG {
+            background-image: url('/assets/heroBG.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            margin-bottom: 0;
+            min-height: 100vh;
+        }    
+
+        .formatHero{
+            font-weight: 100px;
+            font-size: 25px;
+            font-family: 'Corbel Light', sans-serif;
+            text-align: center;
+            padding-top: 55px;
+        }
+
+        .hero-hr {
+            width: 110px;
+            height: 1px;
+            background-color: white;
+            border: none;
+            margin: 0 auto;
+        }
+
+
+        .button{
+            background-color:#FF5252;
+            border: none;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 15px 2px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.534);
+            border: 2px solid white;
+            color: white;
+        }
+
+        /*NEWS*/
+        .newsBG {
+            background-color: #101010;
+            color: white;
+            padding: 50px 0;
+        }        
+
+        /* News title */
+        .title {
+            font-family: 'Corbel Light', sans-serif;        
+            font-weight: normal;
+            font-size: 30px;
+            text-align: left;
+            padding-bottom: 1px;
+        }
+        
+        /* datumi */
+        .date {
+            font-size: 14px;
+            color: #aaa;
+            padding-bottom: 10px;
+            text-align: left;
+        }        
+      
+        /* opis */
+        .description {
+            font-family: 'Corbel Light', sans-serif;        
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 1.6;
+            padding-bottom: 100px;
+            text-align: left;
+            z-index: 1;
+            position: relative;
+        }
+
+        /*EVENTS*/
+        .eventsBG {
+            background-color: #161E21;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .imgSpace {
+            width: 450px;
+        }  
+
+        /*ABOUT ME*/
+        .aboutMeBG {
+            background-color: #101010;
+            color: white;
+            padding: 200px 0;            
+        }
+
+        .aboutMeBG h2{
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+
+        .square1{
+            position: relative;
+        }
+
+        .square1:after{
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: #0F2123;
+            top: -150px;
+            right: 0;
+            left: 400px;
+            z-index: 0;
+        }
+
+        .square2{
+            position: relative;
+        }
+
+        .square2:after{
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background:#1D1524;
+            top: 350px;
+            right: 0;
+            left: 1000px;
+            z-index: 0;
+            transform: rotate(-50deg);
+        }
+
+
+        .whitespaceAboutMe {
+            width: 100px;
+        }
+
+        .imgAboutMe {
+            position: relative;
+            max-width: 100%;
+            width:500px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #1E2C2E;       
+        }
+
+        .footerNad {
+            display: flex; 
+            justify-content: center;
+            gap: 50px;
+            background-color: #0F2123;
+            padding: 50px 0;
+        }
+
+        .footerPovezava {
+            color: #848586;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            text-decoration: none;
+        }     
+
+        .textF{
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .textF a{
+            color: #ffffff;
+        }
+       
